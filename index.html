@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List App</title>
+    <link rel="css.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontAwesome/css/all.css">
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: linear-gradient(to right top, #051937, #004d7a, #0b093e);
+        /*background: linear-gradient(to right, #8e9eab, #eef2f3);*/
+        min-height: 100vh;
+        font-family: poppins;
+    }
+
+    #wrapper{
+        width: 80%;
+        margin: auto;
+        padding: 2em;
+        max-width: 600px;
+        border-radius: 20px;
+    }
+
+    form{
+        margin-bottom: 0.8em;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    input,button{
+        padding: 0.5em;
+        border-radius: 10px;
+    }
+    li{
+        cursor: pointer;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /*background-color: #0b093e;*/
+        background: linear-gradient(to right, #000c40, #00416a);
+        margin-bottom: 0.8em;
+        padding: 0.3em;
+        border: 1px solid #8aa7ec;
+        border-radius: 15px;
+    }
+    .delete{
+        background-color: red;
+        color: white;
+    }
+    .done{
+        background-color: limegreen;
+        color: white;
+    }
+    input,.item{
+        flex: 1;
+    }
+    ul{
+        list-style: none;
+    }
+    #sub{
+ background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <form id="taskForm">
+            <input type="text" id="txt">
+            <button id="add">Add</button>
+        </form>
+
+        <ul id="task">
+<!--            <li ><span class="item">Coding</span>-->
+<!--                <button class="done">Done</button>-->
+<!--                <button class="delete">Delete</button></li>-->
+        </ul>
+    </div>
+    <script src="js.js"> </script>
+</body>
+</html>
