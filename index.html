@@ -6,16 +6,24 @@
     <link rel="css.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fontAwesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@800&display=swap" rel="stylesheet">
 
 </head>
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@800&display=swap');
+
+
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     body{
-        background-image: linear-gradient(to right top, #051937, #004d7a, #0b093e);
+        background-image: linear-gradient(to right top, #C2E8CE, #7FC8A9,#C2E8CE );
+        background-color:#C2E8CE;
         /*background: linear-gradient(to right, #8e9eab, #eef2f3);*/
         min-height: 100vh;
         font-family: poppins;
@@ -39,7 +47,10 @@
     input,button{
         padding: 0.5em;
         border-radius: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color:#FFFFFF;
     }
+    
     li{
         cursor: pointer;
         color: white;
@@ -47,23 +58,38 @@
         align-items: center;
         justify-content: space-between;
         /*background-color: #0b093e;*/
-        background: linear-gradient(to right, #000c40, #00416a);
+        background-color:#161A30;
+        /* background: linear-gradient(to right, #000c40, #00416a); */
         margin-bottom: 0.8em;
         padding: 0.3em;
         border: 1px solid #8aa7ec;
         border-radius: 15px;
     }
     .delete{
-        background-color: red;
-        color: white;
+        /* background-color: red; */
+        color: rgb(227, 51, 48);
+        background-color: #161A30;
+        border: hidden;
+        font-weight: 900;
+        font-size: larger;
     }
     .done{
-        background-color: limegreen;
-        color: white;
+        /* background-color: limegreen; */
+        color: rgb(65, 190, 90);
+        background-color: #161A30;
+        border: hidden;
+        font-weight: 900;
+        font-size: larger;
     }
+
+    .delete .done :hover {
+  background-color: rgb(245, 245, 245);
+    }
+
     input,.item{
         flex: 1;
     }
+
     ul{
         list-style: none;
     }
@@ -71,14 +97,31 @@
  background-color: black;
         color: white;
     }
+
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        color: rgb(7, 7, 7);
+        text-decoration-color: antiquewhite;
+    }
+
+    h2{
+        font-family: 'Sono', monospace;
+    }
+
 </style>
 <body>
     <div id="wrapper">
+        <h1> To Do List</h1>
         <form id="taskForm">
             <input type="text" id="txt">
             <button id="add">Add</button>
         </form>
+        <br/>
 
+        <br/>
+
+        <h2> Task </h2>
         <ul id="task">
 <!--            <li ><span class="item">Coding</span>-->
 <!--                <button class="done">Done</button>-->
